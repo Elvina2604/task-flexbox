@@ -4,3 +4,32 @@ body,
     height: 100%;
     margin: 0;
 }
+.flex-container {
+    width: 700px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+section div {
+    width: 100px;
+    height: 100px;
+    background: #daa520;
+    border-radius: 100px;
+    align-items: center;
+}
+section div:nth-of-type(1) {
+    align-self: flex-start;
+}
+section div:nth-of-type(2) {
+    align-self: center;
+}
+section div:nth-of-type(3) {
+    align-self: flex-end;
+}
+section div:nth-of-type(4) {
+    align-self: center;
+}
+section div:nth-of-type(5) {
+    align-self: flex-start;
+}
